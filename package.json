@@ -28,6 +28,7 @@
   },
   "homepage": "https://github.com/airloy/airloy-react-native#readme",
   "devDependencies": {
+    "react-native": "^0",
     "babel-plugin-transform-object-rest-spread": "6.16.0",
     "babel-preset-es2015-rollup": "1.2.0",
     "rollup-plugin-async": "1.1.0",
@@ -35,7 +36,6 @@
     "uglify-js": "git+https://github.com/mishoo/UglifyJS2.git#harmony"
   },
   "dependencies": {
-    "airloy": "0.9.9",
-    "react-native": "0.36.1"
+    "airloy": "^0.9.8"
   }
 }
