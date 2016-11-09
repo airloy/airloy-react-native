@@ -4,7 +4,7 @@
  * @license MIT
  */
 import { Device, Event, Store } from 'airloy';
-import { AsyncStorage, Platform, RCTDeviceEventEmitter } from 'react-native';
+import { AsyncStorage, DeviceEventEmitter, Platform } from 'react-native';
 
 function __async(g) {
   return new Promise(function (s, j) {
@@ -302,17 +302,17 @@ var NativeEvent = function (_Event) {
   createClass(NativeEvent, [{
     key: 'on',
     value: function on(event, handler) {
-      RCTDeviceEventEmitter.addListener(event, handler);
+      DeviceEventEmitter.addListener(event, handler);
     }
   }, {
     key: 'once',
     value: function once(event, handler) {
-      RCTDeviceEventEmitter.once(event, handler);
+      DeviceEventEmitter.once(event, handler);
     }
   }, {
     key: '_off',
     value: function _off(event) {
-      RCTDeviceEventEmitter.removeAllListeners(event);
+      DeviceEventEmitter.removeAllListeners(event);
     }
   }, {
     key: 'emit',
@@ -321,7 +321,7 @@ var NativeEvent = function (_Event) {
         data[_key - 1] = arguments[_key];
       }
 
-      RCTDeviceEventEmitter.emit.apply(RCTDeviceEventEmitter, [event].concat(data));
+      DeviceEventEmitter.emit.apply(DeviceEventEmitter, [event].concat(data));
     }
   }]);
   return NativeEvent;
