@@ -3,7 +3,7 @@
  */
 
 import {Event} from 'airloy/src';
-import RCTDeviceEventEmitter from 'RCTDeviceEventEmitter';
+import {RCTDeviceEventEmitter} from 'react-native';
 
 export default class NativeEvent extends Event{
 
