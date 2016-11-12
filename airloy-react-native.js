@@ -1,5 +1,5 @@
 /**
- * AirloyReactNative v0.9.8
+ * AirloyReactNative v0.9.9
  * (c) 2016 Layman
  * @license MIT
  */
